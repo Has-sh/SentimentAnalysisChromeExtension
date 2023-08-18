@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Sentiment Analysis Extension",
+  "version": "1.0",
+  "description": "Perform sentiment analysis using Django",
+  "permissions": ["activeTab", "scripting"],
+  "icons": {
+      "48": "icon48.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "48": "icon48.png"
+    }
+  }
+}
