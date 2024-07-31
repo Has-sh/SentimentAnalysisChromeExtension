@@ -28,12 +28,12 @@ def analyze_sentiment(request):
         text = request.POST.get('text')
         result = predict_sentiment(text)
 
-        if result == 'negative':
-            result = "Negative"
-        elif result == 'positive':
-            result = "Positive"
-        else:
-            result = "Neutral"
+        # if result == 'negative':
+        #     result = "Negative"
+        # elif result == 'positive':
+        #     result = "Positive"
+        # else:
+        #     result = "Neutral"
 
         return JsonResponse({'result': result})
 
